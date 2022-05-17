@@ -1,4 +1,3 @@
-import { getYear } from 'date-fns/esm';
 import format from 'date-fns/format';
 import getDay from 'date-fns/getDay';
 import parse from 'date-fns/parse';
@@ -33,9 +32,8 @@ export default function Mypost({ post }) {
 				startAccessor={booking => new Date(booking.check_in)}
 				endAccessor={booking => new Date(booking.check_out)}
 				popup={true}
-				showAllEvents={true}
 				style={{
-					height: 600,
+					height: 750,
 					margin: '50px',
 				}}
 			/>
